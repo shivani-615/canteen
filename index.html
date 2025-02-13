@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Smart Canteen Queue Management</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <header>
+        <h1>Smart Canteen Queue Management</h1>
+    </header>
+    <main>
+        <div class="queue-form">
+            <h2>Join the Queue</h2>
+            <form id="joinQueueForm">
+                <input type="text" id="name" placeholder="Your Name" required />
+                <input type="text" id="rollNumber" placeholder="Roll Number/ID" required />
+                <button type="submit">Join Queue</button>
+            </form>
+            <div id="queueStatus"></div>
+        </div>
+    </main>
+    <!-- Include Socket.IO (for real-time updates) -->
+    <script src="https://cdn.socket.io/4.0.0/socket.io.min.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
